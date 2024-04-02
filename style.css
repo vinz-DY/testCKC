@@ -99,6 +99,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-size: 15px;
 }
 
 ul {
@@ -109,6 +110,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  cursor: pointer;
+}
+
 .log {
   display: flex;
   justify-content: space-between;
@@ -117,7 +122,11 @@ ul {
 }
 
 .logo {
-  height: 2rem;
+  height: 3rem;
+  background-color: black;
+  border-radius: 2rem;
+  padding: 0rem 1rem;
+  border: 0.15rem solid white;
 }
 
 .blocktablep {
@@ -141,6 +150,8 @@ ul {
 
 .EN {
   /* padding: 20px; */
+  cursor: pointer;
+  font-size: 15px;
   text-align: center;
   line-height: 57px;
   width: 57px;
@@ -155,4 +166,15 @@ ul {
   /* j'aurais utilisé un padding et pour centrer avec les flex*/
 }
 
-
+.LOGIN {
+  cursor: pointer;
+  /* padding: 20px; */
+  font-size: 15px;
+  text-align: center;
+  line-height: 57px;
+  width: 182px;
+  height: 57px;
+  color: white;
+  background-color: #ea516f; /* Utilisation de RGBA pour spécifier une couleur de fond semi-transparente */
+  /* j'aurais utilisé un padding et pour centrer avec les flex*/
+}
