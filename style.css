@@ -13,6 +13,7 @@
   height: 810px;
   background-image: url("1.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 .header_container::before {
@@ -28,14 +29,14 @@
 
 .title {
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
   top: 9rem;
   width: 1082px;
   height: 131px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -2.5px;
   position: relative; /* Assure que le texte reste au-dessus du pseudo-élément */
   z-index: 1; /* Place le texte au-dessus du pseudo-élément */
@@ -130,9 +131,14 @@ li {
 }
 
 .blocktablep {
-  color: #973a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #022d45;
+  font-size: 14px;
   position: relative;
-  top: 150px;
+  top: 142px;
   width: 174px;
   height: 40px;
   /* UI Properties */
@@ -141,6 +147,12 @@ li {
   opacity: 1;
   z-index: 2;
 }
+
+.firstblocktablep {
+  background-color: #ea516f;
+  color: white;
+}
+
 .containerBLOCKTABLE {
   position: relative;
   width: 100%;
