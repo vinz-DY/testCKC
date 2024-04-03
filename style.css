@@ -38,8 +38,8 @@
   font-size: 50px;
   font-weight: 400;
   letter-spacing: -2.5px;
-  position: relative; /* Assure que le texte reste au-dessus du pseudo-élément */
-  z-index: 1; /* Place le texte au-dessus du pseudo-élément */
+  position: relative;
+  z-index: 1;
 }
 
 .div_title {
@@ -51,7 +51,7 @@
   position: relative;
   top: 110px;
   width: 1082px;
-  height: 140px;
+  height: 105px;
   /* UI Properties */
   background-color: #ffffff;
   box-shadow: 0px 20px 30px #25345033;
@@ -189,4 +189,26 @@ li {
   color: white;
   background-color: #ea516f; /* Utilisation de RGBA pour spécifier une couleur de fond semi-transparente */
   /* j'aurais utilisé un padding et pour centrer avec les flex*/
+}
+
+.blocksea {
+  position: relative;
+  max-width: 1920px;
+  display: flex;
+  z-index: 1;
+}
+
+.blocksea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 100%;
+  background-color: rgba(2, 45, 69, 0.6);
+  z-index: 2;
+}
+
+.imgSea {
+  width: 640px;
 }
