@@ -412,22 +412,70 @@ li {
 
 /* .........SLIDER ......................*/
 
+.blockGrey {
+  width: 1920px;
+  height: 1202px;
+  background-color: #f5f5fa;
+  padding-top: 64px;
+}
+
+.BigContenairCAR {
+  width: 1920px;
+  display: flex;
+}
+.ActiveBtnTxt {
+  width: 529px;
+  height: 253px;
+  margin-top: 194px;
+  margin-left: 141px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartitle {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+  line-height: 23px;
+  color: #ea516f;
+}
+.cartxt {
+  text-align: left;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: -2.5px;
+  line-height: 60px;
+  color: #022d45;
+}
+
 .carousel-container {
+  width: 1265px;
   position: relative;
-  width: 100%;
   overflow: hidden;
+  display: flex;
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
-}
-
-.slide {
-  flex: 0 0 auto;
-  margin-right: 10px; /* Espacement entre les images */
+  gap: 30px;
 }
 
 .slideimg {
-  width: 540px;
+  width: 943px;
+  height: 511px;
+}
+
+.contenairbuttonslide {
+  display: flex;
+  gap: 50px;
+}
+
+.buttonslide {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  border: none;
 }
