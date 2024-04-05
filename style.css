@@ -217,7 +217,7 @@ li {
   left: 0;
   width: 1920px; /* Largeur de la grille parente */
   height: 552px; /* Hauteur de la grille parente */
-  background-color: rgba(2, 45, 69, 0.6);
+  background-color: rgba(2, 45, 69, 0.5);
   z-index: 2;
 }
 
