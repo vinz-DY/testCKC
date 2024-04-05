@@ -1,5 +1,5 @@
 const slides = document.querySelectorAll(".slide");
-const gap = 30; // Définir la valeur de votre espace entre les diapositives
+const gap = 30; // Définir l'espace entre les diapositives
 let currentSlide = 0;
 
 function showSlide(index) {
