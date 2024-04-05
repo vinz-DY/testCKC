@@ -191,6 +191,7 @@ li {
   font-weight: 400;
   text-align: center;
   letter-spacing: -2.5px;
+  line-height: 60px;
 }
 .text2 {
   font-size: 20px;
@@ -258,11 +259,6 @@ li {
   font-size: 24px;
   letter-spacing: -1.2px;
   line-height: 26px;
-}
-
-.titleblocksea {
-  color: #ea516f;
-  font-size: 15px;
 }
 
 .textblocksea {
@@ -408,6 +404,7 @@ li {
   background-color: #ea516f;
   color: white;
   border: none;
+  text-align: center;
 }
 
 /* .........SLIDER ......................*/
@@ -428,19 +425,12 @@ li {
   height: 253px;
   margin-top: 194px;
   margin-left: 141px;
+  margin-right: 42px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.cartitle {
-  text-align: left;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.75px;
-  line-height: 23px;
-  color: #ea516f;
-}
 .cartxt {
   text-align: left;
   font-size: 50px;
@@ -540,4 +530,91 @@ li {
 /* .inslideTxt {
   color: white;
   z-index: 50;
+} */
+
+.BottomGrey {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 1920px;
+  margin-top: 134px;
+}
+.BottomGreyVignette {
+  width: 526px;
+  height: 429px;
+  position: relative;
+}
+
+.BottomGreyVignette::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 526px; /* Largeur de la grille parente */
+  height: 200px; /* Hauteur de la grille parente */
+  background-image: linear-gradient(
+    to top,
+    rgba(2, 45, 69, 0.5) 50%,
+    rgba(2, 45, 69, 0) 100%
+  );
+  z-index: 2;
+}
+.BottomImg {
+  width: 526px;
+  height: 429px;
+  object-fit: cover;
+}
+
+.BottomTxtCtn {
+  /* width: 388px;
+  height: 111px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-align: left;
+  color: white;
+  z-index: 50;
+}
+
+.BottomBtnTxt {
+  width: 526px;
+  height: 429px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.BottomBtnTxt p {
+  margin-left: auto; /* Ajout pour pousser le texte et le bouton vers la gauche */
+  text-align: left; /* Rétablir l'alignement du texte à gauche */
+}
+.BottomBtnTxt button {
+  margin-left: auto;
+}
+
+.Bottometxt {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  line-height: 26px;
+}
+
+/* .buttonBottom{
+  width: 248px;
+  height: 57px;
+  text-align: center;
+  color: white;
+
+} */
+/* .BottomBtnLittleCtn{
+  width: 427px;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 } */
