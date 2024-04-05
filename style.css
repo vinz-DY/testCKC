@@ -448,6 +448,7 @@ li {
 }
 
 .slides {
+  width: 943px;
   display: flex;
   transition: transform 0.5s ease;
   gap: 30px;

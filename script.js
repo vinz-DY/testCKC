@@ -1,8 +1,9 @@
 const slides = document.querySelectorAll(".slide");
+const gap = 30; // Définir la valeur de votre espace entre les diapositives
 let currentSlide = 0;
 
 function showSlide(index) {
-  const slideWidth = slides[0].clientWidth;
+  const slideWidth = slides[0].clientWidth + gap; // Ajouter le gap à la largeur de la diapositive
   const offset = -index * slideWidth;
   document.querySelector(".slides").style.transform = `translateX(${offset}px)`;
 }
